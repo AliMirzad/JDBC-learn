@@ -5,16 +5,16 @@ public class Person {
     private String firstname;
     private String lastname;
     private String nationalCode;
-    private short age;
+    private int age;
 
-    public Person(String firstname, String lastname, String nationalCode, short age) {
+    public Person(String firstname, String lastname, String nationalCode, int age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.nationalCode = nationalCode;
         this.age = age;
     }
 
-    public Person(Long id, String firstname, String lastname, String nationalCode, short age) {
+    public Person(Long id, String firstname, String lastname, String nationalCode, int age) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -54,7 +54,7 @@ public class Person {
         this.nationalCode = nationalCode;
     }
 
-    public short getAge() {
+    public int getAge() {
         return age;
     }
 
