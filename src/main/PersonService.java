@@ -11,8 +11,16 @@ public class PersonService {
         return -1;
     }
 
-    public int insert(Person person) {
+    public int insertWithoutCar(Person person) {
         /*place businesses here like age must be 18 years old*/
-        return repository.insert(person);
+        return repository.insertWithoutCar(person);
+    }
+
+    public int insertWithCar(Person person) {
+        return repository.insertWithCar(person);
+    }
+
+    public int buyCar(Person person) {
+        return repository.buyCar(person);
     }
 }

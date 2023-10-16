@@ -1,11 +1,26 @@
 package main;
 
 public class Person {
+    /*properties*/
     private Long id;
     private String firstname;
     private String lastname;
     private String nationalCode;
     private int age;
+    private Car car;
+
+    /*costume constructor*/
+    public Person() {
+    }
+
+    public Person(Long id, String firstname, String lastname, String nationalCode, int age, Car car) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.nationalCode = nationalCode;
+        this.age = age;
+        this.car = car;
+    }
 
     public Person(String firstname, String lastname, String nationalCode, int age) {
         this.firstname = firstname;
@@ -14,14 +29,15 @@ public class Person {
         this.age = age;
     }
 
-    public Person(Long id, String firstname, String lastname, String nationalCode, int age) {
-        this.id = id;
+    public Person(String firstname, String lastname, String nationalCode, int age, Car car) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.nationalCode = nationalCode;
         this.age = age;
+        this.car = car;
     }
 
+    /*getter & setter*/
     public Long getId() {
         return id;
     }
@@ -62,6 +78,15 @@ public class Person {
         this.age = age;
     }
 
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    /*implement toString method*/
     @Override
     public String toString() {
         return "Person{" +
