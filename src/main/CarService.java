@@ -1,7 +1,7 @@
 package main;
 
 public class CarService {
-    private final CarRepository repository = new CarRepository();
+    private final CarRepository repository = CarRepository.getInstance();
 
     /*create table if not exists*/
     public int create() {
