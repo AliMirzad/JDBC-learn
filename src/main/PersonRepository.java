@@ -43,6 +43,7 @@ public class PersonRepository {
             "update person set" +
                     " car_id = ?" +
                     " where id = ?";
+idk
     /*create person table.*/
     public int createTable() {
         try (Connection connection = DataBase.getInstance()) {
