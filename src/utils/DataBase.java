@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataBase {
-    private static DataBase instance = null;
-    private Connection connection = null;
+    private static DataBase instance;
+    private Connection connection;
 
     private DataBase() {}
 
